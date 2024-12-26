@@ -10,9 +10,9 @@ namespace Prototype
     internal class Customer : Person
     {
         public string order {  get; set; }
-        public override Person GetPerson()
+        public override Person Clone()
         {
-            throw new NotImplementedException();
+            return (Person)MemberwiseClone();
         }
     }
 }

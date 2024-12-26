@@ -8,7 +8,7 @@ namespace Prototype.Abstract
 {
     public abstract class Person
     {
-        public abstract Person GetPerson();
+        public abstract Person Clone();
 
         public int Id { get; set; }
         public string Name { get; set; }
